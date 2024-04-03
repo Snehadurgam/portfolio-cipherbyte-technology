@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/413909e1c4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>Sneha Durgam</h1>
+              <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#Tech">Tech</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+              </ul> 
+              <i class="fas fa-bars" onclick="openmenu()"></i>  
+            </nav>
+            <div class="header-text">
+        
+                <h1>I'm <span>Sneha Durgam</span> <br>SoftWare Engineer</h1>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/durgamsneha"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/_snehamammu_?igsh=MTRlaGRqZnZnbm9xYg=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/Snehadurgam"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------about--------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/image1.jpg" width="380px" height="auto"/>
+                </div>
+                <div class="about-col-2">
+                    <h1>About me</h1>
+                    <p>Being a Electroincs grad interested in web Development. During Graduation i have worked on
+                        html and css.After graduation i have worked on fontend with reactjs.In backend,
+                         Expressjs with Mongobd using nodejs.
+                    </p>
+                       
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul class="sub-tab">
+                                <li><span>UI</span><br>Designing web intrfaces</li>
+                                <li><span>web Development</span><br>Web app development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2019-2023</span><br>B.tech from TCEk Pedapalli </li>
+                                <li><span>2017-2019</span><br>MPC from SRR Mancherial</li>
+                                <li><span>2016-2017</span><br>SSC from St.antonys high school bellampalli</li>
+                            </ul>
+                        </div>
+                        <a href="images/SNEHA.pdf" download class="btn btn2">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-------services-->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services </h1>
+            <div class="service-list">
+               <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Curd Operations</h2>
+                <p>A basic MERN stack application is a web application built using four technology.mongodb,nodejs,react,expree.
+
+                </p>
+               </div> 
+               <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>web application design</h2>
+                <p> A netflix clone with React,Redux toolkik,Nodejs,Firebase,Express.Mangodb and many more technology
+
+                </p>
+               </div> 
+
+            </div>
+        </div>
+    </div>
+    <!-----skills---->
+
+    <div id="Tech">
+        <div class="container">
+            <h1 class="sub-title">Tech Stack</h1>
+
+            <div class="tech-list">
+                <div class="work">
+                    <div><img src="images/html.png"/><h2>HTML</h2></div>
+                    <div><img src="images/css.png"/><h2>CSS</h2></div>
+                    <div><img src="images/js.png"/><h2>Javascript</h2></div>
+                    <div><img src="images/react.png"/><h2>React</h2></div>
+                    <div><img src="images/sql.jpg"/><h2>mySQl</h2></div>
+                    <div><img src="images/node_js.png"/><h2>NodeJS</h2></div>
+                   <div> <img src="images/mongoDb.png"/><h2>MongoDB</h2></div>
+                  <div>  <img src="images/express.png"/><h2>Express</h2></div>
+                    <div><img src="images/git_hub.png"/><h2>Github</h2></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <!----contact----->
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>durgamsneha23@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91-8977752221</p>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required/>
+                        <input type="email" name="Email" placeholder="Your Email" required/>
+                        <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </body>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw94ywiOoA1tQUdU9_KU8AMerrPimKgQFHpbidBzgkI3rfr8mh6Ai-97SYPkdM_2XcTWw/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+</body>
+</html>
